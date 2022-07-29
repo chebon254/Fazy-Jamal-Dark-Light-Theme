@@ -111,7 +111,7 @@ ul.menu-bar li img {
 }
 /* light or dark mode*/
 /* Primary theme colors */
-.menu-bar[data-theme='light_theme'] {
+.body-effect[data-theme='light_theme'] {
 	--color: #000000;
 	--bg-color: rgb(235, 231, 233, 0.8);
 
@@ -124,7 +124,7 @@ ul.menu-bar li img {
     --sign-in-hover-bg-color: rgba(255, 255, 255, 0.6);
     --sign-in-hover-color: #000000;
   }
-  .menu-bar[data-theme='dark_theme'] {
+  .body-effect[data-theme='dark_theme'] {
 	--color: #fff;
 	--bg-color: rgba(0, 0, 0, 0.3);
 

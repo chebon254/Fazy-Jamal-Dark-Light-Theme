@@ -12,16 +12,16 @@ function setThemePreference() {
   console.log("Hour: " + currentHour);
   
   if(currentHour >= 19 || currentHour <= 6) {
-    document.getElementById('menu-bar').setAttribute("data-theme", "dark_theme") 
+    document.querySelector('.body-effect').setAttribute("data-theme", "dark_theme");
+    document.querySelector('#back-image').src= "https://images.unsplash.com/photo-1554176259-aa961fc32671?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGFyayUyMG1vdW50YWlufGVufDB8fDB8fA%3D%3D&w=1000&q=80";
   }else {
-    document.getElementById('menu-bar').setAttribute("data-theme", "light_theme") 
+    document.querySelector('.body-effect').setAttribute("data-theme", "light_theme");
+    document.querySelector('#back-image').src= "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&w=1000&q=80";
   }
 }
 
 window.onload = setThemePreference;
 // == End of Theme Change Script == //
-
-
 // ########################## Modal Manipulation ##########################
 
 /*$(window).scroll(function(){

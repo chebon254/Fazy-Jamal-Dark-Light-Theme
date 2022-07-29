@@ -77,7 +77,9 @@ body::-webkit-scrollbar-thumb {
   padding: 0 10px;
   margin: 50px 0 0 0;
   margin-top: 10px;
+  vertical-align: middle;
 }
+
 
 .menu-bar li {
   list-style: none;
@@ -107,10 +109,9 @@ ul.menu-bar li img {
     height: 14px;
     margin: 0 5px -1px 0;
 }
-
 /* light or dark mode*/
 /* Primary theme colors */
-.menu-bar[data-theme='light_theme'] {
+.body-effect[data-theme='light_theme'] {
 	--color: #000000;
 	--bg-color: rgb(235, 231, 233, 0.8);
 
@@ -123,7 +124,7 @@ ul.menu-bar li img {
     --sign-in-hover-bg-color: rgba(255, 255, 255, 0.6);
     --sign-in-hover-color: #000000;
   }
-  .menu-bar[data-theme='dark_theme'] {
+  .body-effect[data-theme='dark_theme'] {
 	--color: #fff;
 	--bg-color: rgba(0, 0, 0, 0.3);
 
@@ -189,10 +190,7 @@ ul.menu-bar li img {
   position: fixed;
   right: 30px;
   bottom: 55px;
-
 }
-
-
 
 
 svg.svg-inline--fa.fa-instagram.insta {
