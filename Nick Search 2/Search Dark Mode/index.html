@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+      <title>Nick | Toons</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./imgs/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./Styles/main.css" />
+    <link rel="stylesheet" href="./Styles/glider.min.css" />
+    <link rel="stylesheet" href="./Styles/data.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d591cda822.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/shufflejs@5"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <header>
+      <nav class="main-nav">
+        <div class="nav-content">
+          <a href="/" id="main-logo"></a>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-bar" id="menu-bar" data-theme="light_theme">
+            <li>
+              <img
+                src="https://www.nicepng.com/png/full/115-1153942_white-home-icon-png-white-home-logo-transparent.png"
+              />
+            </li>
+            <li>
+              <img
+                src="https://www.iconsdb.com/icons/preview/white/tv-xxl.png"
+                style="padding-bottom: 1px"
+              />Series
+            </li>
+            <li>
+              <img
+                src="https://www.iconsdb.com/icons/preview/white/popcorn-xxl.png"
+              />Movies
+            </li>
+            <li>
+              <img
+                src="https://icon-library.com/images/three-bar-menu-icon/three-bar-menu-icon-3.jpg"
+              />Live TV
+            </li>
+            <li>
+              <img
+                src="https://www.iconsdb.com/icons/preview/white/newspaper-xxl.png"
+              />News
+            </li>
+            <li>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Movie_icon.svg/1024px-Movie_icon.svg.png"
+              />Trailers
+            </li>
+            <li>
+              <img
+                src="https://www.iconsdb.com/icons/preview/white/music-2-xxl.png"
+              />Songs
+            </li>
+            <li class="search-li">
+              <svg
+                class="svg-inline--fa fa-magnifying-glass"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="magnifying-glass"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                data-fa-i2svg=""
+              >
+                <path
+                  fill="currentColor"
+                  d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+                ></path>
+              </svg>
+            </li>
+            <li class="searchbox">
+              <input
+                class="searchtext"
+                type="text"
+                placeholder="type to search..."
+                text-align="center"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--------------------- video----------------------------->
+
+    <div class="playback">
+      <!-- <video
+        id="videobcg"
+        width="100%"
+        height="100%"
+        muted
+        loop
+        preload="metadata"
+        autoplay
+        src="Videos/hom.mp4"
+      ></video> -->
+      <img
+        src="https://images.unsplash.com/photo-1554176259-aa961fc32671?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGFyayUyMG1vdW50YWlufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+        alt=""
+      />
+    </div>
+    <!-- <div class="playback-content"></div> -->
+
+    <main>
+      <div class="slides">
+        <section id="nick" class="cont">
+          <div class="glider-contain">
+            <div class="glider"></div>
+          </div>
+        </section>
+      </div>
+
+
+    </main>
+    <footer>
+      <a href="https://www.instagram.com/toonsmultiverse/" target="_blank">
+      <button class="sign-in_btn">
+        <p id="signin-btn_text">
+          <i class="fab fa-instagram insta"></i>
+          ToonsMultiverse
+        </p>
+      </button>
+      </a>
+      <script src="./Scripts/glider.min.js"></script>
+      <script src="./Scripts/data.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script
+        src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./Scripts/index.js"></script>
+    </footer>
+
+    <!--------------------- Footer ----------------------------->
+  </body>
+</html>

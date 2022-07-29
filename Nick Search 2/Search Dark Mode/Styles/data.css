@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333333;
+}
+
+.cont {
+  margin: 1rem auto;
+  width: 98%;
+}
+
+.card {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transform-style: preserve-3d;
+}

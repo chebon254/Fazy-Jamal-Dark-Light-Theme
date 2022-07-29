@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(169, 169, 169);
+  border-radius: 0.5rem;
+}
+
+/* ####################### NavBar ###################### */
+
+.main-nav {
+  width: 100%;
+  height: 3.25rem;
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  left: 0;
+}
+
+.nav-content {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.25rem;
+}
+
+.menu-container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+}
+
+.menu-container img{
+  height: 20px;
+  width: 20px;
+}
+
+
+
+#main-logo {
+  height: 150px;
+  width: 150px;
+  margin-top: 50px;
+  background-image: url(../imgs/Toonsmultiverse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+}
+
+.menu-bar {
+  border-radius: 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline-flex;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  padding: 0 10px;
+  margin: 50px 0 0 0;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+
+.menu-bar li {
+  list-style: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 16px;
+  margin: 0 8px;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.menu-bar li::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+
+ul.menu-bar li img {
+  width: 14px;
+    height: 14px;
+    margin: 0 5px -1px 0;
+}
+/* light or dark mode*/
+/* Primary theme colors */
+.menu-bar[data-theme='light_theme'] {
+	--color: #000000;
+	--bg-color: rgb(235, 231, 233, 0.8);
+
+    --list-color: rgb(130, 130, 130, 0.9);
+    --list-hover-color: #000000;
+    --image-invert: invert(50%);
+    --image-hover-invert: invert(100%);
+    --sign-in-bg-color: rgba(255, 255, 255, 0.5);
+    --sign-in-color: rgba(0, 0, 0, .6);
+    --sign-in-hover-bg-color: rgba(255, 255, 255, 0.6);
+    --sign-in-hover-color: #000000;
+  }
+  .menu-bar[data-theme='dark_theme'] {
+	--color: #fff;
+	--bg-color: rgba(0, 0, 0, 0.3);
+
+    --list-color: #ffffff;
+    --list-hover-color: gray;
+    --image-invert: none;
+    --image-hover-invert: none;
+    --sign-in-bg-color: rgba(0, 0, 0, 0.3);
+    --sign-in-color: white;
+    --sign-in-hover-bg-color: rgba(0, 0, 0, 0.5);
+    --sign-in-hover-color: white;
+  }
+
+.menu-bar {
+  background-color: var(--bg-color);
+}
+.menu-bar li {
+    color: var(--list-color);
+  }
+  
+  .menu-bar li:hover {
+    color: var(--list-hover-color);
+  }
+  
+  .menu-bar li:hover img {
+    filter: invert(50%);
+  }
+  
+  .menu-bar li img {
+    filter: var(--image-invert);
+  }
+  
+  .menu-bar li:hover img {
+    filter: var(--image-hover-invert);
+  }
+  
+  input.searchtext{
+    color: var(--color)
+  }
+  
+  .sign-in_btn {
+    background: var(--sign-in-bg-color);
+    color: var(--sign-in-color);
+  }
+  
+  .sign-in_btn:hover {
+    background: var(--sign-in-hover-bg-color);
+    color: var(--sign-in-hover-color);
+  }
+/* light or dark mode*/
+
+
+
+.slides {
+  margin: 7em 0;
+}
+
+.sign-in_btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  position: fixed;
+  right: 30px;
+  bottom: 55px;
+}
+
+
+svg.svg-inline--fa.fa-instagram.insta {
+  vertical-align: middle !important;
+  margin-bottom: 1px;
+}
+
+#signin-btn_text {
+  margin: 0.2rem;
+  padding: 0.2rem 0.3rem;
+  font-weight: bold;
+}
+
+.searchbtn {
+  color: white;
+  /* float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  transition: 0.4s;
+}
+
+input.searchtext {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+li.searchbox {
+  width: 750px;
+  flex-basis: 100%;
+  display: none;
+}
+
+/* ####################### Video Div ###################### */
+.playback {
+  height: auto;
+  position: relative;
+}
+
+.playback video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: blur(30px);
+}
+
+.playback img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: blur(30px);
+}
+
+.playback-content {
+  width: 98%;
+  height: 100%;
+  margin: 10em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 0.2rem;
+}
+
+/* ####################### Device Info Container ###################### */
+#devices-info_container {
+  width: 100%;
+  margin-top: 4rem;
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+
+.devices-info {
+  width: 50%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  word-break: break-word;
+}
+
+.tv-logo {
+  width: 65px;
+  height: 65px;
+}
+
+.tv-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.devices-heading {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin: 1.3rem 0 0 0;
+  user-select: none;
+}
+
+.devices-subheading {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 1.3rem 0;
+  padding: 0;
+  user-select: none;
+}
+
+.devices {
+  margin: 0.8rem 0;
+  display: grid;
+  grid-template: 6.75rem / repeat(5, 1fr);
+  column-gap: 0.5rem;
+}
+
+.device img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.dev-cat {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.devices-info a {
+  text-decoration: none;
+  color: #409cff;
+}
+
+.dev-info {
+  font-size: 1.5rem;
+  font-weight: 600;
+  user-select: none;
+}
+
+.dev-info,
+.dev-setup,
+.dev-compt {
+  margin: 0.2rem 0;
+}
+
+.compt-devices {
+  margin: 1rem 0;
+  display: grid;
+  grid-template: auto / repeat(3, 1fr);
+  column-gap: 4rem;
+}
+
+.compt-devices img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.dev-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.avail {
+  font-size: 0.7rem;
+  user-select: none;
+}
+
+
+#nick .glider {
+  padding: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 25px;
+}
+
+#nick .card {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  perspective: 800px;
+  position: relative;
+  transform-style: preserve-3d;
+  background-color: white;
+  transition: box-shadow, transform;
+  transition-duration: 0.1s;
+  transition-timing-function: cubic-bezier(0.62, 0.28, 0.57, 0.91);
+  cursor: pointer;
+  overflow: hidden;
+  max-height: 110px;
+}
+
+input:hover + .underline,
+input:focus + .underline {
+  transform: scale(1);
+}
+
+/* a.card:hover {
+  -webkit-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  box-shadow: 2px 2px 1px 1px rgb(0 0 0 / 80%);
+}
+ */
+
